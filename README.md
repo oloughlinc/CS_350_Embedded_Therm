@@ -1,1 +1,5 @@
-# CS_350_Project
+# CS 350 Embedded Thermometer w/ TI LaunchPad
+
+In this project we built a thermometer with a framework for server reporting on a target embedded device, in this case, a TI CC3220 Launchpad. Working with C on embedded hardware provides a unique set of challenges. One thing I ensured was that the software takes a minimal memory footprint considering the reduced processing power and hardware memory provisions on the board. Function call stack is kept to a minimum and variable declarations use minimal byte space. No data is cached outside of a 1 second timeframe. Another thing that was well done was the pre-project planning stage. The project was broken down into a set of parallel state machines operated with a task scheduler.
+
+I feel that the project can be improved to enhance readability by better compartmentalizing the code in segments. Some documentation of the written code would also be helpful in regards to this. However, I am fairly happy with this foray into the embedded space, and this project may be expanded for wireless cloud client access given the capabilities available on the TI board.
